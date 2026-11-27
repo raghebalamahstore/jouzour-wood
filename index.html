@@ -3,7 +3,36 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Jouzour Handcrafts</title>
+<title>Jouzour Wood | Handmade wood lamps and boards</title>
+<meta name="description" content="Handmade wood lamps and kitchen boards from Aadloun, Lebanon. Order on WhatsApp.">
+<meta name="theme-color" content="#120d09">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Jouzour Wood">
+<meta property="og:title" content="Jouzour Wood | جذور للأخشاب">
+<meta property="og:description" content="Handmade wood lamps and boards from Aadloun, Lebanon. أباجورات وألواح من الخشب الطبيعي، صناعة يدوية من عدلون.">
+<meta property="og:image" content="https://jouzour-wood.pages.dev/img/hero.jpg">
+<meta property="og:image:width" content="1000">
+<meta property="og:image:height" content="1093">
+<meta property="og:locale" content="ar_LB">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Jouzour Wood",
+  "alternateName": "جذور للأخشاب",
+  "description": "Handmade wood lamps and kitchen boards.",
+  "telephone": "+96171109205",
+  "address": { "@type": "PostalAddress", "addressLocality": "Aadloun", "addressCountry": "LB" },
+  "sameAs": ["https://www.instagram.com/jouzorwood/"]
+}
+</script>
+
+<script src="js/lang-init.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Reem+Kufi:wght@500;700&family=Tajawal:wght@400;500;700&family=Young+Serif&display=swap">
@@ -18,13 +47,14 @@
         <path d="M24 31V19M24 23l-7-8M24 21l7-9M24 26l-8-4M24 26l8-5"/>
         <path d="M24 31l-6 8M24 31v9M24 31l6 8"/>
       </svg>
-      <span><b>Jouzour</b><small data-k="brandSub">Handcrafts</small></span>
+      <span><b>Jouzour</b><small data-k="brandSub">Wood</small></span>
     </a>
     <nav class="links" aria-label="Main">
       <a href="#lamps" data-k="navLamps">Lamps</a>
       <a href="#boards" data-k="navBoards">Boards</a>
       <a href="#about" data-k="navAbout">About</a>
       <a href="#contact" data-k="navContact">Contact</a>
+      <a href="https://www.instagram.com/jouzorwood/" target="_blank" rel="noopener" data-k="navInsta">Instagram</a>
     </nav>
     <div class="lang" role="group" aria-label="Language">
       <button type="button" id="btn-en" data-lang="en" aria-pressed="true">English</button>
@@ -42,11 +72,11 @@
         <p class="lead" data-k="heroLead">Lamps shaped from branches, roots and solid blocks of wood, and boards for the kitchen. Every piece is made by hand, so no two are alike.</p>
         <div class="cta">
           <a class="btn" href="#lamps" data-k="ctaLamps">See the lamps</a>
-          <a class="btn ghost" href="https://wa.me/96171109205" target="_blank" rel="noopener" data-k="ctaOrder">Order on WhatsApp</a>
+          <a class="btn ghost" data-wa="general" href="https://wa.me/96171109205?text=Hello%2C%20I%27d%20like%20to%20order%20or%20ask%20about%20a%20piece." target="_blank" rel="noopener" data-k="ctaOrder">Order on WhatsApp</a>
         </div>
       </div>
       <div class="glow">
-        <img src="img/forked.jpg" width="1000" height="1093" alt="Forked branch lamp with a warm filament bulb" data-ka="forkedAlt">
+        <img src="img/hero.jpg" width="1000" height="1093" fetchpriority="high" alt="Branch lamp wrapped in rope, with a warm filament bulb hanging from its tip" data-ka="heroAlt">
       </div>
     </div>
   </section>
@@ -60,36 +90,43 @@
       </div>
       <div class="lamp-grid">
         <article class="lamp"><figure>
-          <div class="ph"><img src="img/forked.jpg" width="1000" height="1093" loading="lazy" alt="Forked branch lamp" data-ka="l1"></div>
+          <div class="ph"><button class="zoom" type="button" data-key="l1" aria-label="View larger: Forked branch lamp"><picture><source type="image/webp" srcset="img/forked.webp"><img src="img/forked.jpg" width="1000" height="1093" loading="lazy" alt="l1" data-ka="l1"></picture></button></div>
           <h3 data-k="l1">Forked branch lamp</h3>
           <p data-k="l1d">A natural fork holds the bulb, set on a dark wood base.</p>
+          <a class="ask" data-wa="l1" data-k="ask" href="https://wa.me/96171109205?text=Hello%2C%20I%27m%20interested%20in%3A%20Forked%20branch%20lamp" target="_blank" rel="noopener">Ask about this piece</a>
         </figure></article>
         <article class="lamp"><figure>
-          <div class="ph"><img src="img/rope.jpg" width="1000" height="1093" loading="lazy" alt="Rope-wrapped branch lamp" data-ka="l2"></div>
+          <div class="ph"><button class="zoom" type="button" data-key="l2" aria-label="View larger: Rope-wrapped branch lamp"><picture><source type="image/webp" srcset="img/rope.webp"><img src="img/rope.jpg" width="1000" height="1093" loading="lazy" alt="l2" data-ka="l2"></picture></button></div>
           <h3 data-k="l2">Rope-wrapped branch lamp</h3>
           <p data-k="l2d">A curved branch wrapped in thick rope, with the bulb hanging from its tip.</p>
+          <a class="ask" data-wa="l2" data-k="ask" href="https://wa.me/96171109205?text=Hello%2C%20I%27m%20interested%20in%3A%20Rope-wrapped%20branch%20lamp" target="_blank" rel="noopener">Ask about this piece</a>
         </figure></article>
         <article class="lamp"><figure>
-          <div class="ph"><img src="img/figures.jpg" width="1000" height="1093" loading="lazy" alt="Rope figure lamps" data-ka="l3"></div>
+          <div class="ph"><button class="zoom" type="button" data-key="l3" aria-label="View larger: Rope figure lamps"><picture><source type="image/webp" srcset="img/figures.webp"><img src="img/figures.jpg" width="1000" height="1093" loading="lazy" alt="l3" data-ka="l3"></picture></button></div>
           <h3 data-k="l3">Rope figure lamps</h3>
           <p data-k="l3d">Two little wood-block figures with rope arms and legs, sitting on the edge of a shelf.</p>
+          <a class="ask" data-wa="l3" data-k="ask" href="https://wa.me/96171109205?text=Hello%2C%20I%27m%20interested%20in%3A%20Rope%20figure%20lamps" target="_blank" rel="noopener">Ask about this piece</a>
         </figure></article>
         <article class="lamp"><figure>
-          <div class="ph"><img src="img/lashed.jpg" width="1000" height="1093" loading="lazy" alt="Stone and wood lamp" data-ka="l4"></div>
+          <div class="ph"><button class="zoom" type="button" data-key="l4" aria-label="View larger: Stone and wood lamp"><picture><source type="image/webp" srcset="img/lashed.webp"><img src="img/lashed.jpg" width="1000" height="1093" loading="lazy" alt="l4" data-ka="l4"></picture></button></div>
           <h3 data-k="l4">Stone and wood lamp</h3>
           <p data-k="l4d">Stacked stones beside a curved wooden arm, under a linen shade.</p>
+          <a class="ask" data-wa="l4" data-k="ask" href="https://wa.me/96171109205?text=Hello%2C%20I%27m%20interested%20in%3A%20Stone%20and%20wood%20lamp" target="_blank" rel="noopener">Ask about this piece</a>
         </figure></article>
         <article class="lamp"><figure>
-          <div class="ph"><img src="img/cube.jpg" width="1000" height="1093" loading="lazy" alt="Charred block lamp" data-ka="l5"></div>
+          <div class="ph"><button class="zoom" type="button" data-key="l5" aria-label="View larger: Charred block lamp"><picture><source type="image/webp" srcset="img/cube.webp"><img src="img/cube.jpg" width="1000" height="1093" loading="lazy" alt="l5" data-ka="l5"></picture></button></div>
           <h3 data-k="l5">Charred block lamp</h3>
           <p data-k="l5d">A dark, burnt-finish block of wood with a vintage toggle switch.</p>
+          <a class="ask" data-wa="l5" data-k="ask" href="https://wa.me/96171109205?text=Hello%2C%20I%27m%20interested%20in%3A%20Charred%20block%20lamp" target="_blank" rel="noopener">Ask about this piece</a>
         </figure></article>
         <article class="lamp"><figure>
-          <div class="ph"><img src="img/stone.jpg" width="1000" height="1093" loading="lazy" alt="Rope-laced block lamp" data-ka="l6"></div>
+          <div class="ph"><button class="zoom" type="button" data-key="l6" aria-label="View larger: Rope-laced block lamp"><picture><source type="image/webp" srcset="img/stone.webp"><img src="img/stone.jpg" width="1000" height="1093" loading="lazy" alt="l6" data-ka="l6"></picture></button></div>
           <h3 data-k="l6">Rope-laced block lamp</h3>
           <p data-k="l6d">Rope laced through the wood like a boot, finished with a bow at the side.</p>
+          <a class="ask" data-wa="l6" data-k="ask" href="https://wa.me/96171109205?text=Hello%2C%20I%27m%20interested%20in%3A%20Rope-laced%20block%20lamp" target="_blank" rel="noopener">Ask about this piece</a>
         </figure></article>
       </div>
+      <p class="more"><a href="https://www.instagram.com/jouzorwood/" target="_blank" rel="noopener" data-k="moreIg">See more pieces on Instagram</a></p>
     </div>
   </section>
 
@@ -100,42 +137,52 @@
         <h2 data-k="boardsTitle">From roots to your kitchen</h2>
         <p data-k="boardsIntro">Natural wood boards for cutting and serving, each one burned with the Jouzour mark.</p>
       </div>
-      <div class="board-grid">
+      <div>
+        <div class="board-grid">
         <article class="board"><figure>
-          <img src="img/board1.jpg" width="1000" height="1329" loading="lazy" alt="Branch-handle board" data-ka="b1">
+          <button class="zoom" type="button" data-key="b1" aria-label="View larger: Branch-handle board"><picture><source type="image/webp" srcset="img/board1.webp"><img src="img/board1.jpg" width="1000" height="1329" loading="lazy" alt="b1" data-ka="b1"></picture></button>
           <h3 data-k="b1">Branch-handle board</h3>
           <p data-k="b1d">A handle shaped like a small branch, on a wide, flat cutting surface.</p>
+          <a class="ask" data-wa="b1" data-k="ask" href="https://wa.me/96171109205?text=Hello%2C%20I%27m%20interested%20in%3A%20Branch-handle%20board" target="_blank" rel="noopener">Ask about this piece</a>
         </figure></article>
         <article class="board"><figure>
-          <img src="img/board2.jpg" width="1000" height="1329" loading="lazy" alt="Loop-handle board" data-ka="b2">
+          <button class="zoom" type="button" data-key="b2" aria-label="View larger: Loop-handle board"><picture><source type="image/webp" srcset="img/board2.webp"><img src="img/board2.jpg" width="1000" height="1329" loading="lazy" alt="b2" data-ka="b2"></picture></button>
           <h3 data-k="b2">Loop-handle board</h3>
           <p data-k="b2d">An open loop for carrying or hanging, and a sculpted edge that follows the grain.</p>
+          <a class="ask" data-wa="b2" data-k="ask" href="https://wa.me/96171109205?text=Hello%2C%20I%27m%20interested%20in%3A%20Loop-handle%20board" target="_blank" rel="noopener">Ask about this piece</a>
         </figure></article>
         <article class="board"><figure>
-          <img src="img/board3.jpg" width="800" height="1063" loading="lazy" alt="Rope-tied paddle board" data-ka="b3">
+          <button class="zoom" type="button" data-key="b3" aria-label="View larger: Rope-tied paddle board"><picture><source type="image/webp" srcset="img/board3.webp"><img src="img/board3.jpg" width="800" height="1063" loading="lazy" alt="b3" data-ka="b3"></picture></button>
           <h3 data-k="b3">Rope-tied paddle board</h3>
           <p data-k="b3d">A paddle-shaped board with a small loop handle, tied with natural rope and a Jouzour tag.</p>
+          <a class="ask" data-wa="b3" data-k="ask" href="https://wa.me/96171109205?text=Hello%2C%20I%27m%20interested%20in%3A%20Rope-tied%20paddle%20board" target="_blank" rel="noopener">Ask about this piece</a>
         </figure></article>
         <article class="board"><figure>
-          <img src="img/board4.jpg" width="800" height="1063" loading="lazy" alt="Sculpted-handle board" data-ka="b4">
+          <button class="zoom" type="button" data-key="b4" aria-label="View larger: Sculpted-handle board"><picture><source type="image/webp" srcset="img/board4.webp"><img src="img/board4.jpg" width="800" height="1063" loading="lazy" alt="b4" data-ka="b4"></picture></button>
           <h3 data-k="b4">Sculpted-handle board</h3>
           <p data-k="b4d">A flowing, curved handle with a juice groove around the edge, new design.</p>
+          <a class="ask" data-wa="b4" data-k="ask" href="https://wa.me/96171109205?text=Hello%2C%20I%27m%20interested%20in%3A%20Sculpted-handle%20board" target="_blank" rel="noopener">Ask about this piece</a>
         </figure></article>
         <article class="board"><figure>
-          <img src="img/board5.jpg" width="800" height="1063" loading="lazy" alt="Slot-handle board" data-ka="b5">
+          <button class="zoom" type="button" data-key="b5" aria-label="View larger: Slot-handle board"><picture><source type="image/webp" srcset="img/board5.webp"><img src="img/board5.jpg" width="800" height="1063" loading="lazy" alt="b5" data-ka="b5"></picture></button>
           <h3 data-k="b5">Slot-handle board</h3>
           <p data-k="b5d">A cut-out handle at the top and a groove around the surface to catch juices.</p>
+          <a class="ask" data-wa="b5" data-k="ask" href="https://wa.me/96171109205?text=Hello%2C%20I%27m%20interested%20in%3A%20Slot-handle%20board" target="_blank" rel="noopener">Ask about this piece</a>
         </figure></article>
         <article class="board"><figure>
-          <img src="img/board6.jpg" width="800" height="1063" loading="lazy" alt="Slim slot-handle board" data-ka="b6">
+          <button class="zoom" type="button" data-key="b6" aria-label="View larger: Slim slot-handle board"><picture><source type="image/webp" srcset="img/board6.webp"><img src="img/board6.jpg" width="800" height="1063" loading="lazy" alt="b6" data-ka="b6"></picture></button>
           <h3 data-k="b6">Slim slot-handle board</h3>
           <p data-k="b6d">The same slot handle on a slimmer board, easy to hang and store.</p>
+          <a class="ask" data-wa="b6" data-k="ask" href="https://wa.me/96171109205?text=Hello%2C%20I%27m%20interested%20in%3A%20Slim%20slot-handle%20board" target="_blank" rel="noopener">Ask about this piece</a>
         </figure></article>
         <article class="board"><figure>
-          <img src="img/board7.jpg" width="800" height="1063" loading="lazy" alt="Classic block board" data-ka="b7">
+          <button class="zoom" type="button" data-key="b7" aria-label="View larger: Classic block board"><picture><source type="image/webp" srcset="img/board7.webp"><img src="img/board7.jpg" width="800" height="1063" loading="lazy" alt="b7" data-ka="b7"></picture></button>
           <h3 data-k="b7">Classic block board</h3>
           <p data-k="b7d">A plain, solid board with the Jouzour mark burned into the corner.</p>
+          <a class="ask" data-wa="b7" data-k="ask" href="https://wa.me/96171109205?text=Hello%2C%20I%27m%20interested%20in%3A%20Classic%20block%20board" target="_blank" rel="noopener">Ask about this piece</a>
         </figure></article>
+        </div>
+        <p class="more"><a href="https://www.instagram.com/jouzorwood/" target="_blank" rel="noopener" data-k="moreIg">See more pieces on Instagram</a></p>
       </div>
     </div>
   </section>
@@ -164,13 +211,13 @@
         <p class="contact-body" data-k="contactBody">Message us to order a piece or to ask about a design.</p>
         <a class="phone" id="phone" href="tel:+96171109205"><bdi dir="ltr">+961 71 109 205</bdi></a>
         <div class="cta">
-          <a class="btn" href="https://wa.me/96171109205" target="_blank" rel="noopener" data-k="ctaOrder">Order on WhatsApp</a>
+          <a class="btn" data-wa="general" href="https://wa.me/96171109205?text=Hello%2C%20I%27d%20like%20to%20order%20or%20ask%20about%20a%20piece." target="_blank" rel="noopener" data-k="ctaOrder">Order on WhatsApp</a>
           <button class="btn ghost" type="button" id="copy" data-k="copy">Copy number</button>
         </div>
       </div>
       <dl>
         <div><dt data-k="dtInsta">Instagram</dt><dd><a href="https://www.instagram.com/jouzorwood/" target="_blank" rel="noopener"><bdi dir="ltr">@jouzorwood</bdi></a></dd></div>
-        <div><dt data-k="dtPlace">Workshop</dt><dd data-k="place">Aadloun, Lebanon</dd></div>
+        <div><dt data-k="dtPlace">Workshop</dt><dd><span data-k="place">Aadloun, Lebanon</span><br><a href="https://www.google.com/maps/search/?api=1&query=Aadloun%2C+Lebanon" target="_blank" rel="noopener" data-k="mapLink">Open in Google Maps</a></dd></div>
         <div><dt data-k="dtPhone">Phone</dt><dd><bdi dir="ltr">+961 71 109 205</bdi></dd></div>
       </dl>
     </div>
@@ -179,10 +226,24 @@
 
 <footer>
   <div class="wrap">
-    <span>© 2026 Jouzour Handcrafts</span>
+    <span data-k="copyright">&copy; 2026 Jouzour Wood</span>
+    <a href="https://www.instagram.com/jouzorwood/" target="_blank" rel="noopener" data-k="navInsta">Instagram</a>
     <span data-k="footTag">From roots to your home.</span>
   </div>
 </footer>
+
+<dialog class="lb" id="lb" aria-label="Photo viewer">
+  <div class="lb-inner" id="lb-inner">
+    <button class="lb-btn lb-close" id="lb-close" type="button" data-kl="close" aria-label="Close"></button>
+    <button class="lb-btn lb-prev" id="lb-prev" type="button" data-kl="prev" aria-label="Previous photo"></button>
+    <figure class="lb-fig">
+      <img id="lb-img" alt="">
+      <figcaption id="lb-cap"></figcaption>
+    </figure>
+    <a class="btn" id="lb-ask" data-k="ask" href="https://wa.me/96171109205?text=Hello%2C%20I%27d%20like%20to%20order%20or%20ask%20about%20a%20piece." target="_blank" rel="noopener">Ask about this piece</a>
+    <button class="lb-btn lb-next" id="lb-next" type="button" data-kl="next" aria-label="Next photo"></button>
+  </div>
+</dialog>
 
 <script src="js/main.js" defer></script>
 </body>
