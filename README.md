@@ -36,4 +36,5 @@ Open `index.html` in a browser, or run `npx serve .` in this folder.
 - **Text:** all visible text lives in `js/main.js`, in the `en` and `ar` blocks. Change it there.
 - **Hero photo:** replace `img/hero.jpg` with a new photo (keep the same file name). It is also the picture shown when the link is shared.
 - **New photos:** add a `.jpg` and a `.webp` version. The `.webp` is smaller and loads faster.
-- **Domain:** `index.html` has an `og:image` address that starts with `https://jouzour-wood.pages.dev`. If the real address is different, change it, or shared links will not show a picture.
+- **Domain:** `index.html` has an `og:image` address that starts with `https://jouzour-wood.raghebalamahstore.workers.dev`. If the site moves to a different address (for example a custom domain), change it, or shared links will not show a picture.
+- **Live site:** https://jouzour-wood.raghebalamahstore.workers.dev (Cloudflare Worker with static assets, redeploys on every push to `main`).
