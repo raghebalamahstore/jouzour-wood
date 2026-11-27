@@ -226,3 +226,41 @@ dialog.lb::backdrop { background: rgba(10, 7, 4, .94); }
 html[dir="rtl"] .lb-prev::before { content: "\203A"; }
 html[dir="rtl"] .lb-next::before { content: "\2039"; }
 html.lb-open { overflow: hidden; }
+
+/* ---- mobile fit and no sideways wiggle ---- */
+html { -webkit-text-size-adjust: 100%; overscroll-behavior-x: none; overflow-x: hidden; overflow-x: clip; }
+body { overflow-x: clip; }
+.hero { overflow-x: clip; }
+.glow::before { inset: -10% -6%; }
+.hero .wrap > *, .boards .wrap > *, .about .wrap > *, .contact .wrap > * { min-width: 0; }
+h1, h2, h3, p, dd { overflow-wrap: break-word; }
+.phone { max-width: 100%; }
+button, .btn, .ask, .lang button { touch-action: manipulation; -webkit-tap-highlight-color: rgba(242, 164, 68, .2); }
+.zoom:hover img { filter: none; }
+@media (hover: hover) { .zoom:hover img { filter: brightness(1.08); } }
+.ask { padding: .5rem 0 .15rem; margin-top: .4rem; }
+
+/* the menu now has five links: let it wrap instead of pushing the page sideways */
+.links { flex-wrap: wrap; row-gap: .1rem; }
+
+@media (max-width: 720px) {
+  .top .wrap { gap: .5rem 1rem; }
+  .brand b { font-size: 1.2rem; }
+  .links { gap: .1rem 1.1rem; font-size: .92rem; }
+  .links a { padding-block: .5rem; }
+  .lang button { min-height: 40px; }
+}
+@media (max-width: 520px) {
+  .cta .btn { flex: 1 1 100%; text-align: center; }
+}
+@media (max-width: 380px) {
+  .links { gap: .1rem .9rem; font-size: .88rem; }
+}
+
+/* photo viewer on phones: arrows at the bottom so they never cover the photo */
+dialog.lb { height: 100vh; height: 100dvh; }
+#lb-img { max-height: 64vh; max-height: 62dvh; }
+@media (max-width: 600px) {
+  .lb-inner { padding: 3.5rem .75rem 5.5rem; }
+  .lb-prev, .lb-next { top: auto; bottom: 1.2rem; transform: none; }
+}
