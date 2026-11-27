@@ -1,7 +1,12 @@
 # Jouzour Wood
 
 Static website for Jouzour Wood (handmade wood lamps and boards), in English and Arabic.
-No build step. The site is `index.html` plus the `img` folder.
+No build step. Plain HTML, CSS and JavaScript:
+
+- `index.html` (the page)
+- `css/style.css` (all styling)
+- `js/main.js` (English/Arabic switch and the copy-number button)
+- `img/` (photos)
 
 ## Host on Cloudflare Pages
 
